@@ -1,0 +1,12 @@
+mutation UpdateBook($input: UpdateBookInput!) {
+  updateBook(input: $input) {
+    book {
+      title
+    }
+    error {
+      message
+      code
+    }
+    success
+  }
+}

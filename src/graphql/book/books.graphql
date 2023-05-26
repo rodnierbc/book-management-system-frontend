@@ -1,0 +1,15 @@
+query Books {
+  getBooks {
+    books {
+      id
+      title
+      author
+      publicationYear
+    }
+    error {
+      code
+      message
+    }
+    success
+  }
+}
