@@ -1,0 +1,14 @@
+query Book($id: String!) {
+  getBook(id: $id) {
+    book {
+      id
+      author
+      publicationYear
+      title
+    }
+    error {
+      code
+    }
+    success
+  }
+}
