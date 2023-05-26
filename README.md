@@ -1,46 +1,67 @@
-# Getting Started with Create React App
+# Book Management System Backend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![GitHub package.json version](https://img.shields.io/github/package-json/v/rodnierbc/book-management-system-frontend)
+![GitHub](https://img.shields.io/github/license/rodnierbc/book-management-system-frontend)
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+This project is the frontend for a Book Management System. It allows users to perform CRUD operations on books.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Get all books:
+  - Retrieves all books from the Book Management System API and displays them.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Create a new book:
+  - Provides a form to enter book details and add a new book to the system.
 
-### `npm test`
+- Update an existing book:
+  - Allows to modify the details of an existing book, such as its title, author and other attributes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Delete a book:
+  - Allows to remove a book from the system permanently.
 
-### `npm run build`
+## Technologies Used
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React
+- Apollo Client
+- GraphQL
+- Tailwind CSS
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To get a local copy up and running, follow these steps:
 
-### `npm run eject`
+1. Clone the repository:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+git clone https://github.com/your-username/book-management-system-frontend.git
+cd book-management-system-frontend
+```
+2. Install the dependencies:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Environment Variables
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+For the application to run, it needs a connection to the backend API. This is specified using the environment variable BOOK_MANAGEMENT_SYSTEM_URI. Create a .env file in the root directory of your project and add the following:
 
-## Learn More
+```
+BOOK_MANAGEMENT_SYSTEM_URI="http://localhost:8000/graphql"
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Usage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To start the development server:
+```
+npm run start
+```
+
+## Author
+
+Rodnier Borrego
+
+
+
